@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá</title>
+    <style>
+        /* Deixa a cor de fundo azul fraco */ 
+        body {
+            background-color: rgb(103, 187, 255);
+        }
+        /* Coloca no meio e aumenta a letra */ 
+        .meio {
+            text-align: center;
+            font-size: 3em;
+        }
+        /* Dá um espaçamento da lateral */ 
+        div {
+            padding: 180px;
+        }
+    </style>
+    <script>
+        // Input do usuário
+        let nome1 = prompt("Digite seu nome: ");
+        let idade = prompt("Digite sua idade: ")
+
+        // Definir a primeira letra para CapsLock on
+        let nome = nome1[0].toUpperCase() + nome1.substr(1);
+
+        // Escrever na página
+        document.write("<div><h2 class=meio>Olá, meu nome é " + nome + "</h2>");
+        document.write("<h2 class=meio> e tenho " + idade + " anos de idade" + "</h2></div>");
+    </script>
+</head>
+<body></body>
+     

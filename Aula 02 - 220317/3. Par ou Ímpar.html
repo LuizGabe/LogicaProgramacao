@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+    <style>
+        /* Definir a cor de fundo para azul fraco e colocar o texto no meio da página */
+        body {
+            background-color: rgb(103, 187, 255);
+            text-align: center;
+        }
+
+        /* Colocar o texto mais para o meio da pagina e aumentar a letra */
+        h1 {
+            font-size: 5em;
+            padding-top: 180px;
+        }
+    </style>
+    <script>
+        // Input do usuário
+        let numero = parseInt(prompt("Digite um número para identificar se ele é par ou ímpar: "))
+        let numero1 = numero / 2
+
+        // Identifica se o número é Par ou Ímpar
+        if (Number.isInteger(numero1)){
+            console.log("O número " + numero + " é Par")
+            var PI = "Par"
+        } else if(!Number.isInteger(numero1)) {
+            console.log("O número " + numero + " é Ímpar")
+            var PI = "Ímpar"
+        }
+
+        // Mostrar na Tela o resultado
+        document.write("<h1>O número " + numero + " é " + PI + "</h1>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

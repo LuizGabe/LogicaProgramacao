@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Brechó</title>
+    <style>
+        body {
+            background-color: rgb(103, 187, 255);
+        }
+    </style>
+    <script>
+        // Input do usuário
+        alert("Este programa irá calcular o valor de venda de uma peça conforme abaixo \n\nValor da peça menor que 50 = +45%\nValor da peça maior que 50 = +30%")
+        let precoCompra = parseFloat(prompt("Digite o valor de compra da peça:"))
+
+        // Mostrar o input do usuário
+        console.log(`Preço de compra: ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(precoCompra)}`);
+        console.log(``);
+
+        // Se for menor que 50 vai aumentar 45% no valor, se não vai aumentar 30%
+        if (precoCompra < 50) {
+            precoVenda = precoCompra + ((precoCompra*45)/100);
+        } else {
+            precoVenda = precoCompra + ((precoCompra*30)/100);
+        }
+
+        // Mostrar o preço de venda do produto com a soma
+        console.log(`Preço de venda: ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(precoVenda)}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

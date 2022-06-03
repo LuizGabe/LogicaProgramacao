@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média | Max</title>
+    <style>
+        body {
+            background-color: rgb(103, 187, 255);
+        }
+    </style>
+    <script>
+        //Inicia o valores
+        let valores = [] 
+        let maiorValor = 0;
+        let soma = 0; 
+
+        // Pede ao usuario 5 vezes o número e guarda os valores no valores
+        for (i=1;i<6;i++) {
+            valores.push(parseInt(prompt(`Digite o ${i}ª valor: `)))
+        }
+
+        for (i=0;i<valores.length;i++) {
+            soma = soma + valores[i]
+            if(valores[i] > maiorValor) {
+            maiorValor = valores[i];
+        }
+        }
+       
+        // Mostra no console.log a media dos 5 valores informados
+        console.log(`A média dos valores ${valores} é ${soma/valores.length}`)
+
+        // Mostra no console.log o maior valor dos 5 valores informados
+        console.log(`O valor máximo destes mesmos valores é ${maiorValor}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

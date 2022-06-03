@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comum | Array</title>
+    <style>
+        body {
+            background-color: rgb(103, 187, 255);
+        }
+    </style>
+    <script>
+        // Definir e mostrar os conjuntos à serem analisados
+        let a = [2,4,3,8,9,10,11,15]
+        let b = [11,15,20,30,40,2]
+        console.log(`Conjunto A de números informado: ${a}`)
+        console.log(`Conjunto B de números informado: ${b}`)
+
+
+        // Iniciar a variavel de resultado
+        let c = []
+
+        // Analisando os números
+        for(i=0; i<=7; i++){
+            for(e=0; e<=5; e++){
+                if(a[i]==b[e]){
+                    c.push(b[e])
+                }
+            }
+        }
+
+        // Mostrar no console.log
+        console.log(`Números em comum: ${c}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

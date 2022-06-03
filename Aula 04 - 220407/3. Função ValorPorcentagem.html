@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função | Valor Porcentagem</title>
+    <style>
+        body {
+            background-color: rgb(103, 187, 255);
+        }
+        h1 {
+            text-align: center;
+            padding: 200px;
+            font-size: 4em;
+        }
+    </style>
+    <script>
+        // Criando a função para calcular a porcentagem
+        function porcentagem(valor, porcentagem){
+            let resultado = ((valor * porcentagem) / 100)
+            return resultado
+        }
+
+        // Inputs do usuário - Valor, Porcentagem
+        alert("Esta função recebe um valor e a porcentagem, depois calcula e retorna o valor correspondente.")
+        let valorInput = parseInt(prompt(`Digite o valor inteiro que quer descobrir a porcentagem: `))
+        let porcentagemInput = parseInt(prompt(`Digite a porcentagem referente ao número inteiro já informado: `))
+
+        // Chamar função para calcular a porcentagem
+        let resultadoPorcentagem = porcentagem(valorInput,porcentagemInput)
+
+        // Mostrar na tela 
+        document.write(`<h1>${porcentagemInput}% de ${valorInput} é ${resultadoPorcentagem}</h1>`)
+        console.log(`${porcentagemInput}% de ${valorInput} é ${resultadoPorcentagem}`)
+    </script>
+</head>
+<body></body>
+</html>

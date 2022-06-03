@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função | texto</title>
+    <style>
+        body {
+            background-color: rgb(103, 187, 255);
+        }
+        h1 {
+            text-align: center;
+            padding: 100px;
+            font-size: 3em;
+        }
+
+    </style>
+    <script>
+        // Anuncia ao usuário o que a aplicação faz
+        alert(`Digite algo e o código vai mostrar na tela.`)
+
+        // Pede ao usuário o texto para mostrar na tela
+        let inputUsuario = prompt(`Digite algo: `)
+
+        // Cria a função para mostrar na tela
+        function imprimir(texto) {
+            document.write(`<h1>${texto}</h1>`)
+            console.log(texto)
+        }   
+
+        // Chama a função, dando como variavel o texto que o usuário digitou
+        imprimir(inputUsuario)
+
+    </script>
+</head>
+<body></body>
+</html>
